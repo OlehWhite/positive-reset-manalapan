@@ -23,15 +23,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const PsychologicalEvaluation = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Psychological
-          Evaluation
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Psychological Evaluation</title>
         <meta
           name="keywords"
           content="psychological evaluation, mental health assessment, diagnostic evaluation, psychological testing, mental health evaluation, psychological assessment, psychological services, psychological diagnosis, psychological testing services, psychological evaluation process, psychological evaluation benefits, mental health diagnosis, mental health screening, psychological evaluation for therapy, psychological evaluation for treatment, psychological evaluation for diagnosis, psychological evaluation for assessment, psychological evaluation for mental health, comprehensive psychological evaluation, professional psychological evaluation"

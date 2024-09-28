@@ -8,12 +8,13 @@ import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import { Box } from "@mui/material";
 import React, { FC } from "react";
 import Head from "next/head";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const Home: FC = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Elizabeth - Call Today</title>
+        <title>{WEBSITE_TITLE} - Call Today</title>
         <meta
           name="description"
           content="New Jersey Mental Health Clinic offers psychotherapy; medication management, comprehensive assessment, diagnosis and treatment of a full range of behavioral disorders."

@@ -19,15 +19,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const OutpatientMentalHealth = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Outpatient
-          Mental Health
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Outpatient Mental Health</title>
         <meta
           name="keywords"
           content="mental health, outpatient services, therapy, counseling, psychiatry, mental wellness, mental wellbeing, mental health clinic, mental health treatment, behavioral health, mental health support, mental health care, mental health services, mental health resources, mental health professionals, mental health programs, mental health solutions"

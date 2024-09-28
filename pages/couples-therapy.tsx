@@ -15,15 +15,13 @@ import Head from "next/head";
 import React from "react";
 import FiveBasicPrinciples from "../components/FiveBasicPrinciples/FiveBasicPrinciples";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const CouplesTherapy = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Couples
-          Therapy
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Couples Therapy</title>
         <meta
           name="keywords"
           content="couples therapy, couples counseling, couples relationship, couples communication, couples conflict resolution, couples intimacy, couples support, couples well-being, couples healing, couples mental health, couples therapy services, couples therapy techniques, couples therapy benefits, couples therapy approach, couples therapy sessions, couples therapy process, couples therapy interventions, couples therapy strategies"

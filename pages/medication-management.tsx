@@ -16,15 +16,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const MedicationManagement = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Medication
-          Management
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Medication Management</title>
         <meta
           name="keywords"
           content="Medication management, Medication administration, Medication monitoring, Medication adherence, Medication safety, Medication optimization, Prescription management, Medication reminders, Medication tracking, Medication support"

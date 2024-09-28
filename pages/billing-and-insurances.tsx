@@ -17,6 +17,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { PRIVATE_DATA } from "../otherPages/privateData";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const ID = "positiveresetTelEmailAddress";
 
@@ -26,7 +27,7 @@ const BillingAndInsurances = () => {
   useEffect(() => {
     axios
       .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
+        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`,
       )
       .then((response) => {
         setTelNum(response.data.items[0].fields.telephoneNumber);
@@ -39,10 +40,7 @@ const BillingAndInsurances = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Billing and
-          Insurances
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Billing and Insurances</title>
         <meta
           name="keywords"
           content="Billing and insurances, Insurance coverage, Payment options, Medical billing, Insurance claims, Billing services, Healthcare billing, Insurance reimbursement, Insurance providers, Payment assistance"

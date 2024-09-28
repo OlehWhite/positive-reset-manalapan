@@ -20,15 +20,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const AngerManagement = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Anger
-          Management
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Anger Management</title>
         <meta
           name="keywords"
           content="anger management, anger management techniques, anger management therapy, anger management classes, anger management counseling, anger management strategies, anger management for adults, anger management for children, anger management for teens, anger management for parents, anger management tips, anger management exercises, anger management skills, anger management programs, anger management workshops, anger management resources, anger management support, anger management techniques for stress, anger management techniques for relationships, anger management techniques for workplace, anger management techniques for self-control"

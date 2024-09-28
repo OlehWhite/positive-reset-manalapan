@@ -20,14 +20,13 @@ import Image from "next/image";
 import Head from "next/head";
 import { DATA_LINKS } from "../components/Services/constants";
 import Link from "next/link";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const Telehealth = () => {
   return (
     <Box>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Telehealth
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Telehealth</title>
         <meta
           name="keywords"
           content="Telehealth services, Online therapy, Virtual counseling, Remote mental health support, Telemedicine solutions, Telepsychiatry, Teletherapy sessions, Telehealth benefits, Accessible healthcare, Remote treatment options"

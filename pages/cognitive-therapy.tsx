@@ -14,15 +14,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const CognitiveTherapy = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Cognitive
-          Therapy
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Cognitive Therapy</title>
         <meta
           name="keywords"
           content="cognitive therapy, cognitive behavioral therapy, CBT, cognitive therapy techniques, cognitive therapy benefits, cognitive therapy process, cognitive therapy approaches, cognitive therapy for anxiety, cognitive therapy for depression, cognitive therapy for stress, cognitive therapy for trauma, cognitive therapy for addiction, cognitive therapy for phobias, cognitive therapy for OCD, cognitive therapy for PTSD, cognitive therapy for insomnia, cognitive therapy for eating disorders, cognitive therapy for self-esteem, cognitive therapy for anger management"

@@ -24,14 +24,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import { RatesSurprise } from "../otherPages/rates/RatesSurprise/RatesSurprise";
 import { Feedbacks } from "../components/Feedbacks/Feedbacks";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const Rates = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Rates
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Rates</title>
         <meta
           name="keywords"
           content="rates, pricing, fees, cost, payment, service charges, pricing structure, rate plans, pricing options, fee schedule, payment information, service costs, pricing details, affordable rates, competitive pricing, transparent pricing, budget-friendly rates, discounted rates, special offers"

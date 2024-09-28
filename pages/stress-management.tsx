@@ -18,15 +18,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const StressManagement = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Child and
-          Adolescent
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Child and Adolescent</title>
         <meta
           name="keywords"
           content="stress management, stress relief, stress reduction, stress coping techniques, stress therapy, stress counseling, stress-related issues, stress symptoms, stress management strategies, stress management techniques, stress awareness, stress prevention, stress recovery, stress resilience, stress-free living, stress reduction techniques, stress management tips, stress management programs, stress management services"

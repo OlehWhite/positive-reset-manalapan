@@ -15,15 +15,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const IndividualTherapy = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Individual
-          Therapy
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Individual Therapy</title>
         <meta
           name="keywords"
           content="individual therapy, one-on-one counseling, personal therapy, individual counseling, private therapy, psychotherapy, talk therapy, therapy sessions, therapeutic treatment, mental health therapy, emotional support, personal growth, self-discovery, coping skills, mental well-being, psychological support, self-care, mental health services, therapy for individuals, counseling services"

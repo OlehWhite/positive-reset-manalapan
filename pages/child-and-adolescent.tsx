@@ -14,15 +14,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const ChildAndAdolescent = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Child and
-          Adolescent
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Child and Adolescent</title>
         <meta
           name="keywords"
           content="Child and adolescent services, Child therapy, Adolescent therapy, Child counseling, Adolescent counseling, Child mental health, Adolescent mental health, Child behavioral health, Adolescent behavioral health, Child development, Adolescent development"

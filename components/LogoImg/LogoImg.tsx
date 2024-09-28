@@ -18,7 +18,7 @@ const LogoImg = () => {
         </Box>
         <Box>
           <Box sx={{ color: "#fff", fontWeight: "bold", fontSize: 18 }}>
-          POSITIVE RESET
+            POSITIVE RESET
           </Box>
           <Box
             sx={{
@@ -35,7 +35,7 @@ const LogoImg = () => {
               fontSize: 14,
             }}
           >
-            ELIZABETH
+            MANALAPAN
           </Box>
         </Box>
       </Box>

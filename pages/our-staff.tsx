@@ -13,6 +13,7 @@ import Head from "next/head";
 import axios from "axios";
 import { PRIVATE_DATA } from "../otherPages/privateData";
 import PersonCardComponent from "../otherPages/ourStaff/PersonCardComponent";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const OurStaff = () => {
   const [counselors, setCounselors] = useState<object[]>([]);
@@ -45,7 +46,7 @@ const OurStaff = () => {
   return (
     <>
       <Head>
-        <title>Positive Reset Elizabeth - Call Today | Our Staff</title>
+        <title>{WEBSITE_TITLE} - Call Today | Our Staff</title>
       </Head>
       <OtherHeader />
       <WrapperHeader

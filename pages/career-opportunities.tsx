@@ -17,6 +17,7 @@ import React, { useRef } from "react";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const CareerOpportunities = () => {
   const formRef = useRef<HTMLDivElement>(null);
@@ -30,10 +31,7 @@ const CareerOpportunities = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Career
-          Opportunities
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Career Opportunities</title>
         <meta
           name="keywords"
           content="Career opportunities, Job openings, Employment opportunities, Careers, Hiring, Job vacancies, Work with us, Join our team, Job positions, Job application."

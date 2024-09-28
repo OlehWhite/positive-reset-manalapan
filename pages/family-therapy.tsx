@@ -14,15 +14,13 @@ import { Box } from "@mui/material";
 import Image from "next/image";
 import Head from "next/head";
 import React from "react";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 const FamilyTherapy = () => {
   return (
     <>
       <Head>
-        <title>
-          Illinois Behavioral Care - Call Today | Family
-          Therapy
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Family Therapy</title>
         <meta
           name="keywords"
           content="family therapy, family counseling, family relationship, family dynamics, family conflict resolution, family communication, family support, family well-being, family unity, family healing, family mental health, family therapy services, family therapy techniques, family therapy benefits, family therapy approach, family therapy sessions, family therapy process, family therapy interventions, family therapy strategies"

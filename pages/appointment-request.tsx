@@ -22,9 +22,10 @@ import { Feedbacks } from "../components/Feedbacks/Feedbacks";
 import { PRIVATE_DATA } from "../otherPages/privateData";
 import { Iframe } from "../otherPages/career/style";
 import IMGHeader from "../public/NAPr4GWk.jpeg";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import axios from "axios";
+import { WEBSITE_TITLE } from "../otherPages/utils";
 
 interface IForm {
   Name: string;
@@ -58,11 +59,11 @@ const AppointmentRequest = () => {
   useEffect(() => {
     axios
       .get(
-        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`
+        `https://cdn.contentful.com/spaces/${PRIVATE_DATA.spaseID}/entries?content_type=${ID}&access_token=${PRIVATE_DATA.accessId}`,
       )
       .then((response) => {
         setGoogleMap(
-          response.data.items[0].fields.googleMap.content[0].content[0].value
+          response.data.items[0].fields.googleMap.content[0].content[0].value,
         );
       })
       .catch((error) => {
@@ -78,10 +79,7 @@ const AppointmentRequest = () => {
   return (
     <>
       <Head>
-        <title>
-          Positive Reset Elizabeth - Call Today | Appointment
-          Request
-        </title>
+        <title>{WEBSITE_TITLE} - Call Today | Appointment Request</title>
         <meta
           name="keywords"
           content="Appointment request, Book appointment, Schedule appointment, Online appointment, Request appointment, Book online, Healthcare appointment, Medical appointment, Appointment booking, Patient appointment"
