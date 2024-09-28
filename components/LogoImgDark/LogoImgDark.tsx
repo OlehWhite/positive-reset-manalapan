@@ -42,7 +42,7 @@ const LogoImgDark = () => {
               fontSize: 14,
             }}
           >
-            ELIZABETH
+            MANALAPAN
           </Box>
         </Box>
       </Box>
