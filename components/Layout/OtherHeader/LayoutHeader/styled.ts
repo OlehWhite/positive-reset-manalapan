@@ -2,10 +2,10 @@ import { Box, styled } from "@mui/material";
 
 export const Wrapper = styled(Box)(() => {
   return {
-    width: 1300,
-    maxWidth: "100%",
     display: "flex",
     justifyContent: "space-between",
+    width: "100%",
+    maxWidth: 1300,
     margin: "0 auto",
     padding: "20px 0",
 
@@ -33,11 +33,14 @@ export const Tel = styled("a")(() => {
 
 export const Address = styled(Box)(() => {
   return {
+    marginTop: "10px",
+    marginRight: "5px",
     color: "#979797",
     fontWeight: 600,
     fontSize: 13,
     lineHeight: "22px",
-    width: 180,
+    width: "100%",
+    maxWidth: 330,
     cursor: "pointer",
     transition: ".3s",
 
@@ -51,8 +54,6 @@ export const ContactAndFollow = styled(Box)(() => {
   return {
     display: "flex",
     justifyContent: "space-between",
-    maxWidth: 615,
-    width: "100%",
     alignItems: "center",
 
     "@media (max-width: 950px)": {

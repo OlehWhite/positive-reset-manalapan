@@ -51,7 +51,7 @@ export const LayoutHeader: FC = () => {
             <Tel href={`tel:${project?.tel}`}>{project?.tel}</Tel>
             <Link
               id="link-email"
-              href="https://positivereset.com/appointment-request"
+              href="https://www.positiveresetmanalapan.com/appointment-request"
             >
               {project?.email}
             </Link>

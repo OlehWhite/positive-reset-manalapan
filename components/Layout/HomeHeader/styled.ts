@@ -21,6 +21,7 @@ export const BackgroundTwo = styled(Slider)(() => {
     position: "absolute",
     zIndex: "-1",
     marginTop: 300,
+    left: "20%",
   };
 });
 
