@@ -75,9 +75,7 @@ export const Contact = styled(Box)(() => {
 });
 
 export const FollowInfo = styled(Box)(() => {
-  return {
-    width: 100,
-  };
+  return {};
 });
 
 export const Title = styled(Box)(() => {
