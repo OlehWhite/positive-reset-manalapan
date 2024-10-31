@@ -28,6 +28,17 @@ import { useGetProjects } from "../../../../services/getInfo";
 export const LayoutHeader: FC = () => {
   const { project } = useGetProjects();
 
+  const facebookLink = project?.links.find(
+    (link) => link.title === "Facebook",
+  )?.link;
+  const linkedInLink = project?.links.find(
+    (link) => link.title === "LinkedIn",
+  )?.link;
+  const address = project?.address || "";
+  const [line1, line2] = address.includes("Manalapan")
+    ? address.split("Manalapan")
+    : [address, ""];
+
   const [openModalWindow, setOpenModalWindow] = useState<boolean>(false);
 
   const handleOpen = () => setOpenModalWindow(true);
@@ -53,7 +64,7 @@ export const LayoutHeader: FC = () => {
             <Tel href={`tel:${project?.tel}`}>{project?.tel}</Tel>
             <Link
               id="white-link"
-              href="https://positivereset.com/appointment-request"
+              href="https://www.positiveresetmanalapan.com/appointment-request"
             >
               {project?.email}
             </Link>
@@ -64,7 +75,12 @@ export const LayoutHeader: FC = () => {
             <Image src={IMGLocation} width={45} alt="Phone" title="Phone" />
           </WrapperImg>
           <ContactInfo>
-            <Address onClick={handleOpen}>{project?.address}</Address>
+            <Address onClick={handleOpen}>
+              {" "}
+              {line1.trim()}
+              <br />
+              {`Manalapan${line2}`}
+            </Address>
           </ContactInfo>
         </Contact>
         <Follow>
@@ -80,7 +96,7 @@ export const LayoutHeader: FC = () => {
           <FollowInfo>
             <Title>Follow Us</Title>
             <WrapperFollow>
-              <LinkA href={project?.links[0].link} target="_blank">
+              <LinkA href={facebookLink} target="_blank">
                 <Image
                   src={IMGFacebook}
                   width={12}
@@ -90,7 +106,7 @@ export const LayoutHeader: FC = () => {
                 />
               </LinkA>
 
-              <LinkA href={project?.links[1].link} target="_blank">
+              <LinkA href={linkedInLink} target="_blank">
                 <Image
                   src={IMGLinkedin}
                   width={12}

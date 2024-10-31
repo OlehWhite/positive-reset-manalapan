@@ -56,6 +56,21 @@ const BASE_MENU = [
 export const Footer: FC = () => {
   const { project } = useGetProjects();
 
+  const facebookLink = project?.links.find(
+    (link) => link.title === "Facebook",
+  )?.link;
+  const linkedInLink = project?.links.find(
+    (link) => link.title === "LinkedIn",
+  )?.link;
+  const twitterLink = project?.links.find(
+    (link) => link.title === "Twitter",
+  )?.link;
+
+  const address = project?.address || "";
+  const [line1, line2] = address.includes("Manalapan")
+    ? address.split("Manalapan")
+    : [address, ""];
+
   const [openModalWindow, setOpenModalWindow] = useState<boolean>(false);
 
   const handleOpen = () => setOpenModalWindow(true);
@@ -97,7 +112,12 @@ export const Footer: FC = () => {
               <Image src={IMGLocation} width={40} alt="Phone" title="Phone" />
             </WrapperImg>
             <ContactInfo>
-              <Address onClick={handleOpen}>{project?.address}</Address>
+              <Address onClick={handleOpen}>
+                {" "}
+                {line1.trim()}
+                <br />
+                {`Manalapan${line2}`}
+              </Address>
             </ContactInfo>
           </Contact>
         </Logo>
@@ -167,7 +187,7 @@ export const Footer: FC = () => {
           Copyright © 2024 Vimax LLC. All rights reserved
         </TitleFooter>
         <Links>
-          <Facebook href={project?.links[0].link} target="_blank">
+          <Facebook href={facebookLink} target="_blank">
             <Image
               src={IMGFacebook}
               width={20}
@@ -177,7 +197,7 @@ export const Footer: FC = () => {
             />
           </Facebook>
 
-          <Twitter href={project?.links[2].link} target="_blank">
+          <Twitter href={twitterLink} target="_blank">
             <Image
               src={IMGTwitter}
               width={20}
@@ -187,12 +207,12 @@ export const Footer: FC = () => {
             />
           </Twitter>
 
-          <Linkedin href={project?.links[1].link} target="_blank">
+          <Linkedin href={linkedInLink} target="_blank">
             <Image
               src={IMGLinkedin}
               width={20}
               height={20}
-              alt="Linkedin"
+              alt="LinkedIn"
               title="Linkedin"
             />
           </Linkedin>

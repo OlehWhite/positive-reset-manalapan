@@ -10,6 +10,13 @@ import { useGetProjects } from "../../../../services/getInfo";
 export const Covid19: FC = () => {
   const { project } = useGetProjects();
 
+  const facebookLink = project?.links.find(
+    (link) => link.title === "Facebook",
+  )?.link;
+  const linkedInLink = project?.links.find(
+    (link) => link.title === "LinkedIn",
+  )?.link;
+
   return (
     <>
       <Wrapper>
@@ -57,7 +64,7 @@ export const Covid19: FC = () => {
           </Text>
           <Tel>{project?.tel}</Tel>
           <Box sx={{ display: "flex" }}>
-            <Link href={project?.links[0].link} target="_blank">
+            <Link href={facebookLink} target="_blank">
               <Image
                 src={IMGFacebook}
                 alt="Facebook"
@@ -67,7 +74,7 @@ export const Covid19: FC = () => {
               />
             </Link>
 
-            <Link href={project?.links[3].link} target="_blank">
+            <Link href={linkedInLink} target="_blank">
               <Image
                 src={IMGInstagram}
                 alt="Linkedin"

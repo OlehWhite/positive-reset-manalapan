@@ -33,7 +33,6 @@ export const Tel = styled("a")(() => {
 
 export const Address = styled(Box)(() => {
   return {
-    marginTop: "10px",
     marginRight: "5px",
     color: "white",
     fontWeight: 600,
